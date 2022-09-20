@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<title>Toyhouse</title>
+	</head>
+	<body>
+		<style>
+			.phone {
+				height: 850px;
+				width: 450px;
+			}
+			.phone__top {
+				height: 12%;
+				background-color: black;
+				border-top-right-radius: 50px;
+				border-top-left-radius: 50px;
+			}
+			.phone__screen {
+				height: 76%;
+				border-left: 20px solid black;
+				border-right: 20px solid black;
+			}
+			.phone__bottom {
+				height: 12%;
+				background-color: black;
+				border-bottom-right-radius: 50px;
+				border-bottom-left-radius: 50px;
+			}
+			.phone__home__button {
+				border-radius: 50%;
+				background-color: #363535;
+				height: 55px;
+				width: 55px;
+				position: relative;
+			}
+			.phone__home__button::before {
+				content: "";
+				position: absolute;
+				top: 28%;
+				left: 28%;
+				height: 25px;
+				width: 25px;
+				border-radius: 15%;
+				border: 4px solid black;
+			}
+			.phone__home__button:hover {
+				cursor: pointer;
+				opacity: 0.7;
+			}
+			.phone__center {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.phone__speaker {
+				height: 10px;
+				width: 60px;
+				border-radius: 5px;
+				background-color: #363535;
+			}
+			.status__bar {
+				height: 25px;
+				background-color: #363535;
+				opacity: 0.8;
+				padding: 2px;
+			}
+			.phone__content {
+				height: calc(100% - 25px);
+			}
+			.status__dot {
+				height: 15px;
+				width: 15px;
+				border-radius: 50%;
+				border: 2px solid white;
+			}
+			.status__dot:not(:first-of-type, :last-of-type) {
+				margin: 0 1px;
+			}
+			.status__dot.is--filled {
+				background-color: white;
+			}
+			.status__time {
+				color: white;
+			}
+			.status__battery {
+				position: relative;
+				height: 15px;
+				width: 40px;
+				border-radius: 3px;
+				margin-right: 10px;
+				border: 2px solid rgb(3, 190, 3);
+			}
+			.status__battery::before {
+				content: "";
+				height: 8px;
+				width: 4px;
+				border: 2px solid rgb(3, 190, 3);
+				border-top-right-radius: 3px;
+				border-bottom-right-radius: 3px;
+				top: 2px;
+				right: -5px;
+				position: absolute;
+			}
+			.status__battery::after {
+				content: "";
+				height: 9px;
+				width: 25px;
+				background-color: rgb(3, 190, 3);
+				top: 1px;
+				left: 1px;
+				border-radius: 2px;
+				position: absolute;
+			}
+		</style>
+		<div class="container phone__center">
+			<div class="phone list-group">
+				<div class="phone__top phone__center">
+					<div class="phone__speaker"></div>
+				</div>
+				<div class="phone__screen">
+					<div
+						class="
+							status__bar
+							flex-row
+							justify-content-sm-between
+							align-items-sm-center
+						"
+					>
+						<div class="phone__cell_status flex-row phone__center">
+							<div class="status__dot is--filled"></div>
+							<div class="status__dot is--filled"></div>
+							<div class="status__dot is__filled"></div>
+							<div class="status__dot"></div>
+							<div class="status__dot"></div>
+						</div>
+						<p class="status__time m-0">4:20 PM</p>
+						<div class="status__battery"></div>
+					</div>
+					<div class="phone__content"></div>
+				</div>
+				<div class="phone__bottom phone__center">
+					<div class="phone__home__button"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
