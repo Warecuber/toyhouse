@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rosie</title>
+		<link rel="stylesheet" href="index.css" />
+		<script src="scripts/site.js" />
+		<script src="scripts/-dhru4gQ4kmaJUr4Iomb6Y_UjIw.js"></script>
+	</head>
+
+	<body>
+		<!-- COLOR CHANGING TIP -- use find & replace to quickly replace all hex codes 
+ 
+ -- Primary color ------ #e8afa4 (title & box shadows)
+ -- Secondary Color ---- #95d6c9 (links, divider lines, background gradient)
+ -- BG color ----------- #d9e4e6 (background gradient)
+ 
+----------------------------------------------------------------------------->
+
+		<!-- wrapper container -- hides the profile title ----------------------------->
+		<div
+			class="container-fluid px-0 py-5 card border-0"
+			style="margin-top: -54px"
+		>
+			<div class="container px-0">
+				<!-- content conainter -- set bg gradient & font color here ------------------->
+				<div
+					style="
+						background-image: linear-gradient(#d9e4e6, #95d6c9);
+						color: #222;
+					"
+					class="py-5 px-md-5 px-4"
+				>
+					<div class="row no-gutters">
+						<div class="col-md-4 order-md-2 mb-5">
+							<!-- focal image -- will scale & crop with screen size -- focus in the center of the image ---->
+							<div
+								style="
+									background-image: url('https://images.unsplash.com/photo-1645148803598-611e92fcc154?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+									border: 8px solid #fff;
+									box-shadow: 0.75em 0.75em 0em #e8afa4;
+									background-size: cover;
+									background-position: center;
+									background-repeat: no-repeat;
+									min-height: 380px;
+								"
+								class="h-100"
+							></div>
+						</div>
+						<div class="col-md-8 order-md-1 pr-md-5 mb-5">
+							<!-- intro block ---- will grow with content ---------------------------------->
+							<div
+								style="
+									border: 8px solid #fff;
+									box-shadow: 0.75em 0.75em 0em #e8afa4;
+									background: #fff;
+								"
+								class="p-2"
+							>
+								<h2
+									class="text-center text-uppercase p-2 mb-3"
+									style="background: #e8afa4; color: #fff; letter-spacing: 2px"
+								>
+									Title Here
+								</h2>
+								<div class="row no-gutters">
+									<div class="col-md-6 pr-md-2">
+										<div class="justify-content-between">
+											<span style="font-weight: 500; letter-spacing: 1px">
+												Name</span
+											>
+											<span>Content</span>
+										</div>
+										<hr
+											class="my-2"
+											style="border-color: #95d6c9; opacity: 0.5"
+										/>
+									</div>
+
+									<div class="col-md-6 pl-md-2">
+										<div class="justify-content-between">
+											<span style="font-weight: 500; letter-spacing: 1px">
+												Called</span
+											>
+											<span>nickname</span>
+										</div>
+										<hr
+											class="my-2"
+											style="border-color: #95d6c9; opacity: 0.5"
+										/>
+									</div>
+
+									<div class="col-md-6 pr-md-2">
+										<div class="justify-content-between">
+											<span style="font-weight: 500; letter-spacing: 1px">
+												Age</span
+											>
+											<span>Content</span>
+										</div>
+										<hr
+											class="my-2"
+											style="border-color: #95d6c9; opacity: 0.5"
+										/>
+									</div>
+
+									<div class="col-md-6 pl-md-2">
+										<div class="justify-content-between">
+											<span style="font-weight: 500; letter-spacing: 1px">
+												D.o.B.</span
+											>
+											<span>Content</span>
+										</div>
+										<hr
+											class="my-2"
+											style="border-color: #95d6c9; opacity: 0.5"
+										/>
+									</div>
+
+									<div class="col-md-6 pr-md-2">
+										<div class="justify-content-between">
+											<span style="font-weight: 500; letter-spacing: 1px">
+												Gender</span
+											>
+											<span>Content</span>
+										</div>
+										<hr
+											class="my-2"
+											style="border-color: #95d6c9; opacity: 0.5"
+										/>
+									</div>
+
+									<div class="col-md-6 pl-md-2">
+										<div class="justify-content-between">
+											<span style="font-weight: 500; letter-spacing: 1px">
+												Pronouns</span
+											>
+											<span>content</span>
+										</div>
+										<hr
+											class="my-2"
+											style="border-color: #95d6c9; opacity: 0.5"
+										/>
+									</div>
+
+									<div class="col-md-6 pr-md-2">
+										<div class="justify-content-between">
+											<span style="font-weight: 500; letter-spacing: 1px">
+												Height</span
+											>
+											<span>content</span>
+										</div>
+										<hr
+											class="my-2"
+											style="border-color: #95d6c9; opacity: 0.5"
+										/>
+									</div>
+
+									<div class="col-md-6 pl-md-2">
+										<div class="justify-content-between">
+											<span style="font-weight: 500; letter-spacing: 1px">
+												Race</span
+											>
+											<span>or species</span>
+										</div>
+										<hr
+											class="my-2"
+											style="border-color: #95d6c9; opacity: 0.5"
+										/>
+									</div>
+
+									<div class="col-md-6 pr-md-2">
+										<div class="justify-content-between">
+											<span style="font-weight: 500; letter-spacing: 1px">
+												Role</span
+											>
+											<span>what they do</span>
+										</div>
+										<hr
+											class="my-2"
+											style="border-color: #95d6c9; opacity: 0.5"
+										/>
+									</div>
+
+									<div class="col-md-6 pl-md-2">
+										<div class="justify-content-between">
+											<span style="font-weight: 500; letter-spacing: 1px">
+												Demeanor</span
+											>
+											<span>content</span>
+										</div>
+										<hr
+											class="my-2"
+											style="border-color: #95d6c9; opacity: 0.5"
+										/>
+									</div>
+
+									<div class="col-md-6 pr-md-2">
+										<div class="justify-content-between">
+											<span style="font-weight: 500; letter-spacing: 1px">
+												Flower</span
+											>
+											<span>content</span>
+										</div>
+										<hr
+											class="my-2"
+											style="border-color: #95d6c9; opacity: 0.5"
+										/>
+									</div>
+
+									<div class="col-md-6 pl-md-2">
+										<div class="justify-content-between">
+											<span style="font-weight: 500; letter-spacing: 1px">
+												Element</span
+											>
+											<span>Content</span>
+										</div>
+										<hr
+											class="my-2"
+											style="border-color: #95d6c9; opacity: 0.5"
+										/>
+									</div>
+
+									<div class="col-md-6 pr-md-2">
+										<div class="justify-content-between">
+											<span style="font-weight: 500; letter-spacing: 1px">
+												Theme</span
+											>
+											<!-- theme song -- link a youtube video ----------------------->
+											<span
+												><a
+													href="YT_LINK"
+													target="_BLANK"
+													style="color: #95d6c9"
+												>
+													<i class="fas fa-music-alt fa-fw" /><i
+														class="fas fa-music fa-fw"
+													/><i class="fas fa-music-alt fa-fw" /> </a
+											></span>
+										</div>
+										<hr
+											class="my-2 hidden-md-up"
+											style="border-color: #95d6c9; opacity: 0.5"
+										/>
+									</div>
+
+									<div class="col-md-6 pl-md-2">
+										<div class="justify-content-between">
+											<span style="font-weight: 500; letter-spacing: 1px">
+												HTML</span
+											>
+											<!-- HTML credit -- leave this ----------->
+											<span
+												><a
+													href="/Pinky"
+													style="color: #95d6c9; font-weight: 500"
+													>Pinky</a
+												></span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- palette blocks -- update hex codes with your character's palette ---->
+								<div class="row no-gutters mt-3" style="height: 35px">
+									<div class="col" style="background: #95d6c9"></div>
+									<div class="col" style="background: #d9e4e6"></div>
+									<div class="col" style="background: #e8afa4"></div>
+									<div class="col" style="background: #d9e4e6"></div>
+									<div class="col" style="background: #95d6c9"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row no-gutters">
+						<div class="col-lg-auto order-lg-3 order-2 mb-5">
+							<div
+								style="
+									background: #fff;
+									color: #95d6c9;
+									box-shadow: 0.75em 0.75em 0em #e8afa4;
+								"
+								class="d-flex flex-lg-column flex-row justify-content-between align-items-center h-100 px-4 pt-4"
+							>
+								<!-- deco icons -- these are just for decoration, update to icons that fit your character -- uses font awesome icons -->
+								<i class="fad fa-ferris-wheel fa-fw fa-4x mb-4"></i>
+								<i class="fad fa-ice-cream fa-fw fa-4x mb-4"></i>
+								<i class="fad fa-sun fa-fw fa-4x mb-4"></i>
+							</div>
+						</div>
+						<div class="col-lg order-lg-1 order-1 pr-lg-5 mb-5">
+							<!-- likes block ---- will grow with content ---------------------------------->
+							<div
+								style="
+									background: #fff;
+									border: 8px solid #fff;
+									box-shadow: 0.75em 0.75em 0em #e8afa4;
+								"
+								class="p-2 h-100"
+							>
+								<h4
+									class="text-center text-uppercase p-1"
+									style="background: #e8afa4; color: #fff; letter-spacing: 2px"
+								>
+									Likes
+								</h4>
+								<p style="font-weight: 500; letter-spacing: 1px" class="mb-0">
+									Thing 1
+								</p>
+								<p class="pl-2">
+									Write a small description here. These boxes grow with content.
+								</p>
+
+								<p style="font-weight: 500; letter-spacing: 1px" class="mb-0">
+									Thing 2
+								</p>
+								<p class="pl-2">
+									Write a small description here. These boxes grow with content.
+								</p>
+
+								<p style="font-weight: 500; letter-spacing: 1px" class="mb-0">
+									Thing 3
+								</p>
+								<p class="pl-2">
+									Write a small description here. These boxes grow with content.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg order-lg-2 order-3 pr-lg-5 mb-5">
+							<!-- dislikes block ---- will grow with content ---------------------------------->
+							<div
+								style="
+									background: #fff;
+									border: 8px solid #fff;
+									box-shadow: 0.75em 0.75em 0em #e8afa4;
+								"
+								class="p-2 h-100"
+							>
+								<h4
+									class="text-center text-uppercase p-1"
+									style="background: #e8afa4; color: #fff; letter-spacing: 2px"
+								>
+									Dislikes
+								</h4>
+								<p style="font-weight: 500; letter-spacing: 1px" class="mb-0">
+									Thing 1
+								</p>
+								<p class="pl-2">
+									Write a small description here. These boxes grow with content.
+								</p>
+
+								<p style="font-weight: 500; letter-spacing: 1px" class="mb-0">
+									Thing 2
+								</p>
+								<p class="pl-2">
+									Write a small description here. These boxes grow with content.
+								</p>
+
+								<p style="font-weight: 500; letter-spacing: 1px" class="mb-0">
+									Thing 3
+								</p>
+								<p class="pl-2">
+									Write a small description here. These boxes grow with content.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row no-gutters">
+						<div class="col-md-4 mb-5">
+							<!-- focal image -- will scale & crop with screen size -- focus in the center of the image ---->
+							<div
+								style="
+									background-image: url('https://images.unsplash.com/photo-1536331014686-7c8210a64010?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+									border: 8px solid #fff;
+									box-shadow: 0.75em 0.75em 0em #e8afa4;
+									background-size: cover;
+									background-position: center;
+									background-repeat: no-repeat;
+									min-height: 350px;
+								"
+								class="h-100"
+							></div>
+						</div>
+						<div class="col-md-8 pl-md-5 mb-5">
+							<!-- about block ---- will scroll when filled ---------------------------------->
+							<div
+								style="
+									background: #fff;
+									border: 8px solid #fff;
+									box-shadow: 0.75em 0.75em 0em #e8afa4;
+								"
+							>
+								<h4
+									class="text-center text-uppercase p-1 mt-2 mx-2 mb-0"
+									style="background: #e8afa4; color: #fff; letter-spacing: 2px"
+								>
+									About
+								</h4>
+								<div class="pt-2 px-2" style="height: 300px; overflow: auto">
+									<p>
+										Pie soufflé macaroon tiramisu cake chocolate bar pie
+										brownie. Chupa chups dragée dragée gummies candy tiramisu
+										jelly cookie fruitcake. Liquorice croissant cake brownie
+										candy powder cake jujubes candy. Cupcake jujubes toffee
+										croissant jelly powder. Powder carrot cake cupcake
+										cheesecake carrot cake sesame snaps bonbon fruitcake. Wafer
+										gummi bears jelly beans chocolate cake jelly beans. Jujubes
+										sugar plum pie marshmallow cotton candy jelly-o gingerbread
+										chocolate bar.
+									</p>
+
+									<p>
+										Bear claw sweet gummi bears bear claw powder chupa chups.
+										Candy soufflé pie cake sweet. Croissant cheesecake sesame
+										snaps cupcake candy canes apple pie carrot cake bear claw.
+										Chocolate bar halvah candy chupa chups toffee cookie. Pastry
+										candy gummi bears liquorice marzipan pastry cheesecake.
+										Caramels chocolate cake bear claw macaroon powder. Brownie
+										icing gummies liquorice tootsie roll cupcake. Jelly-o sesame
+										snaps donut marshmallow topping. Cotton candy cupcake
+										gingerbread bonbon marzipan dragée.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row no-gutters mb-md-0">
+						<div class="col-lg-5 mb-5">
+							<div
+								style="
+									background: #fff;
+									border: 8px solid #fff;
+									box-shadow: 0.75em 0.75em 0em #e8afa4;
+								"
+							>
+								<!-- trivia block ---- will scroll when filled ---------------------------------->
+								<h4
+									class="text-center text-uppercase p-1 mt-2 mx-2 mb-0"
+									style="background: #e8afa4; color: #fff; letter-spacing: 2px"
+								>
+									Trivia
+								</h4>
+								<div class="pt-2 px-2" style="height: 260px; overflow: auto">
+									<ul class="mb-0 pl-4">
+										<li class="mb-2">
+											Pie soufflé macaroon tiramisu cake chocolate bar pie
+											brownie.
+										</li>
+										<li class="mb-2">
+											Chupa chups dragée dragée gummies candy tiramisu jelly
+											cookie fruitcake.
+										</li>
+										<li class="mb-2">
+											Liquorice croissant cake brownie candy powder cake jujubes
+											candy.
+										</li>
+										<li class="mb-2">
+											Powder carrot cake cupcake cheesecake carrot cake sesame
+											snaps bonbon fruitcake.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-7 flex-grow-1 mb-5">
+							<div class="row no-gutters h-100">
+								<!-- mood images -- will scale & crop with screen size -- focus in the center of the image ---->
+								<div class="col-md-6 pl-lg-5 pr-lg-0 pr-md-4 mb-md-0 mb-5">
+									<div
+										style="
+											background-image: url('https://images.unsplash.com/photo-1555181937-efe4e074a301?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+											border: 8px solid #fff;
+											box-shadow: 0.75em 0.75em 0em #e8afa4;
+											background-size: cover;
+											background-position: center;
+											background-repeat: no-repeat;
+											min-height: 300px;
+										"
+										class="h-100"
+									></div>
+								</div>
+								<div class="col-md-6 pl-lg-5 pl-md-5">
+									<div
+										style="
+											background-image: url('https://images.unsplash.com/photo-1646587629280-b581dad51149?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+											border: 8px solid #fff;
+											box-shadow: 0.75em 0.75em 0em #e8afa4;
+											background-size: cover;
+											background-position: center;
+											background-repeat: no-repeat;
+											min-height: 300px;
+										"
+										class="h-100"
+									></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row no-gutters">
+						<div class="col-lg-7 flex-grow-1 mb-5">
+							<div class="row no-gutters h-100">
+								<!-- mood images -- will scale & crop with screen size -- focus in the center of the image ---->
+								<div class="col-md-6 pr-lg-0 pr-md-4 mb-md-0 mb-5">
+									<div
+										style="
+											background-image: url('https://images.unsplash.com/photo-1555181937-efe4e074a301?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+											border: 8px solid #fff;
+											box-shadow: 0.75em 0.75em 0em #e8afa4;
+											background-size: cover;
+											background-position: center;
+											background-repeat: no-repeat;
+											min-height: 300px;
+										"
+										class="h-100"
+									></div>
+								</div>
+								<div class="col-md-6 pl-lg-5 pl-md-5">
+									<div
+										style="
+											background-image: url('https://images.unsplash.com/photo-1646587629280-b581dad51149?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+											border: 8px solid #fff;
+											box-shadow: 0.75em 0.75em 0em #e8afa4;
+											background-size: cover;
+											background-position: center;
+											background-repeat: no-repeat;
+											min-height: 300px;
+										"
+										class="h-100"
+									></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5 mb-md-0 mb-5 pl-lg-5">
+							<div
+								style="
+									background: #fff;
+									border: 8px solid #fff;
+									box-shadow: 0.75em 0.75em 0em #e8afa4;
+								"
+							>
+								<!-- trivia block ---- will scroll when filled ---------------------------------->
+								<h4
+									class="text-center text-uppercase p-1 mt-2 mx-2 mb-0"
+									style="background: #e8afa4; color: #fff; letter-spacing: 2px"
+								>
+									Trivia
+								</h4>
+								<div class="pt-2 px-2" style="height: 260px; overflow: auto">
+									<ul class="mb-0 pl-4">
+										<li class="mb-2">
+											Pie soufflé macaroon tiramisu cake chocolate bar pie
+											brownie.
+										</li>
+										<li class="mb-2">
+											Chupa chups dragée dragée gummies candy tiramisu jelly
+											cookie fruitcake.
+										</li>
+										<li class="mb-2">
+											Liquorice croissant cake brownie candy powder cake jujubes
+											candy.
+										</li>
+										<li class="mb-2">
+											Powder carrot cake cupcake cheesecake carrot cake sesame
+											snaps bonbon fruitcake.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
